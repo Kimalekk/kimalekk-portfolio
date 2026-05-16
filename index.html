@@ -82,7 +82,7 @@
             backdrop-filter: blur(10px);
             max-height: 85vh;
             overflow-y: auto;
-            box-sizing: border-box; /* Zabezpieczenie przed rozpychaniem */
+            box-sizing: border-box;
         }
 
         /* Ukrycie paska przewijania dla estetyki */
@@ -177,7 +177,6 @@
             background: rgba(0, 212, 255, 0.15);
             border-color: var(--accent-blue);
             box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
-            /* Usunięto transform: scale, który powodował drżenie */
         }
 
         .btn i {
@@ -193,6 +192,7 @@
         .projects-container {
             display: flex;
             flex-direction: column;
+            gap: 20px; /* Odstęp między projektami */
         }
 
         .project-card {
@@ -284,10 +284,17 @@
 
             <div class="projects-container">
                 <h2>Projects</h2>
+                
                 <div class="project-card">
                     <img src="zentoria.jpg" alt="Zentoria.pl" class="project-logo">
                     <div class="project-title">ZENTORIA.PL</div>
                     <div class="project-desc">Serwer Minecraft tworzony z pasją. Kompleksowe zarządzanie infrastrukturą, konfiguracja pluginów i optymalizacja rozgrywki.</div>
+                </div>
+
+                <div class="project-card">
+                    <img src="codebetter.png" alt="CodeBetter" class="project-logo">
+                    <div class="project-title">CODEBETTER</div>
+                    <div class="project-desc">Innowacyjne rozwiązania programistyczne. Integracja zaawansowanych modeli Claude AI dostępnych w znacznie niższej i konkurencyjnej cenie.</div>
                 </div>
             </div>
 
